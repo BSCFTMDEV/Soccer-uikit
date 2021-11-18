@@ -115,13 +115,13 @@ export const socials = [
     icon: "TelegramIcon",
     items: [
       {
-        label: "",
-        href: "",
+        label: "English",
+        href: "https://t.me/",
       },
-      //{
-      //  label: "",
-      //  href: "",
-     // },      
+      {
+        label: "Português",
+        href: "https://t.me/",
+      },      
       // {
       //   label: "Bahasa Indonesia",
       //   href: "https://t.me/PancakeSwapIndonesia",
@@ -162,24 +162,24 @@ export const socials = [
       //   label: "Français",
       //   href: "https://t.me/pancakeswapfr",
       // },
-     // {
-     //   label: "Announcements",
-     //   href: "",
-     // },
+      {
+        label: "Announcements",
+        href: "https://t.me/",
+      },
       // {
       //   label: "Whale Alert",
       //   href: "https://t.me/PancakeSwapWhales",
       // },
     ],
   },
- // {
-  //  label: "Twitter",
-  //  icon: "TwitterIcon",
-  //  href: "",
- // },
+  {
+    label: "Twitter",
+    icon: "TwitterIcon",
+    href: "https://twitter.com/mondo_finance",
+  },
 ];
 
 export const MENU_HEIGHT = 64;
 export const MENU_ENTRY_HEIGHT = 48;
-export const SIDEBAR_WIDTH_FULL = 230;
+export const SIDEBAR_WIDTH_FULL = 240;
 export const SIDEBAR_WIDTH_REDUCED = 56;
