@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/zcore-coin/zefi-uikit",
+  "repository": "https://github.com/Mondofinance/mondo-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
@@ -18,12 +18,6 @@
     "build-storybook": "build-storybook",
     "test": "jest",
     "release": "yarn build && np"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -37,11 +31,12 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@pancakeswap-libs/eslint-config-pancake": "0.1.0",
     "@rollup/plugin-typescript": "^8.1.1",
-    "@storybook/addon-a11y": "^6.1.16",
-    "@storybook/addon-actions": "^6.1.16",
-    "@storybook/addon-essentials": "^6.1.16",
-    "@storybook/addon-links": "^6.1.16",
-    "@storybook/react": "^6.1.16",
+    "@storybook/addon-a11y": "^6.3.12",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-controls": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.5",
     "@types/react": "^17.0.1",
@@ -64,7 +59,7 @@
     "react-router-dom": "^5.2.0",
     "rollup": "^2.38.4",
     "styled-components": "^5.2.0",
-    "themeprovider-storybook": "^1.6.4",
+    "themeprovider-storybook": "^1.8.0",
     "ts-jest": "^26.5.0",
     "tslib": "^2.0.3",
     "typescript": "^4.0.3"
