@@ -2036,7 +2036,7 @@ var links = [
     {
         label: "Home",
         icon: "HomeIcon",
-        href: "https://finance.zcore.network",
+        href: "",
     },
     {
         label: "Trade",
@@ -2044,18 +2044,18 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.zcore.network/#/swap",
+                href: "",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.zcore.network/#/pool",
+                href: "",
             },
         ],
     },
     {
         label: "Farms",
         icon: "FarmIcon",
-        href: "https://finance.zcore.network/farms",
+        href: "",
     },
     {
         label: "Pools",
@@ -2133,11 +2133,11 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "https://github.com/goosedefi/",
+                href: "",
             },
             {
                 label: 'Docs',
-                href: 'https://zcore-network.gitbook.io/zcore-finance/',
+                href: '',
             },
         ],
     },
@@ -2149,10 +2149,6 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/",
-            },
-            {
-                label: "Português",
                 href: "https://t.me/",
             },
             // {
