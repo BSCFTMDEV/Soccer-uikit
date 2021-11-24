@@ -161,7 +161,7 @@ export const socials = [
       // },
       {
         label: "Announcements",
-        href: "https://t.me/",
+        href: "https://t.me/MoondoFinanceAnnouncements",
       },
       // {
       //   label: "Whale Alert",
