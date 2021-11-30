@@ -2149,7 +2149,7 @@ var socials = [
         items: [
             {
                 label: "English",
-                href: "https://t.me/",
+                href: "https://t.me/https://t.me/moondofinanceyieldfarm",
             },
             // {
             //   label: "Bahasa Indonesia",
@@ -2179,10 +2179,10 @@ var socials = [
             //   label: "Português",
             //   href: "https://t.me/PancakeSwapPortuguese",
             // },
-            // {
-            //   label: "Español",
-            //   href: "https://t.me/PancakeswapEs",
-            // },
+            {
+                label: "Español",
+                href: "https://t.me/MoondofinanceES",
+            },
             // {
             //   label: "日本語",
             //   href: "https://t.me/pancakeswapjp",
@@ -2193,7 +2193,7 @@ var socials = [
             // },
             {
                 label: "Announcements",
-                href: "https://t.me/",
+                href: "https://t.me/MoondoFinanceAnnouncements",
             },
         ],
     },
