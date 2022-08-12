@@ -116,7 +116,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/https://t.me/moondofinanceyieldfarm",
+        href: "https://t.me/",
       },
            
       // {
@@ -149,7 +149,7 @@ export const socials = [
       // },
        {
          label: "Español",
-         href: "https://t.me/MoondofinanceES",
+         href: "https://t.me/",
        },
       // {
       //   label: "日本語",
@@ -161,7 +161,7 @@ export const socials = [
       // },
       {
         label: "Announcements",
-        href: "https://t.me/MoondoFinanceAnnouncements",
+        href: "https://t.me/",
       },
       // {
       //   label: "Whale Alert",
@@ -172,7 +172,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/mondo_finance",
+    href: "https://twitter.com",
   },
 ];
 
