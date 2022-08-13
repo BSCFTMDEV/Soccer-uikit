@@ -2,7 +2,7 @@ export const links = [
   {
     label: "Home",
     icon: "HomeIcon",
-    href: "https://finance.zcore.network",
+    href: "",
   },
   {
     label: "Trade",
@@ -10,18 +10,18 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.zcore.network/#/swap",
+        href: "",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.zcore.network/#/pool",
+        href: "",
       },
     ],
   },
   {
     label: "Farms",
     icon: "FarmIcon",
-    href: "https://finance.zcore.network/farms",
+    href: "",
   },
   {
     label: "Pools",
