@@ -54,7 +54,7 @@ const MenuEntry = styled.div<Props>`
 
   &.rainbow {
     -webkit-background-clip: text;
-    animation: ${rainbowAnimation} 6s ease-in-out infinite;
+    animation: ${rainbowAnimation} 3s ease-in-out infinite;
     background: ${({ theme }) => theme.colors.gradients.bubblegum};
     background-size: 200% 100%;
     font-weight: bold;

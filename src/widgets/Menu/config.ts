@@ -2,7 +2,7 @@ export const links = [
   {
     label: "Home",
     icon: "HomeIcon",
-    href: "",
+    href: "https://finance.zcore.network",
   },
   {
     label: "Trade",
@@ -10,18 +10,18 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "",
+        href: "https://exchange.zcore.network/#/swap",
       },
       {
         label: "Liquidity",
-        href: "",
+        href: "https://exchange.zcore.network/#/pool",
       },
     ],
   },
   {
     label: "Farms",
     icon: "FarmIcon",
-    href: "",
+    href: "https://finance.zcore.network/farms",
   },
   {
     label: "Pools",
@@ -99,11 +99,11 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "",
+        href: "https://github.com/goosedefi/",
       },
       {
         label: 'Docs',
-        href: '',
+        href: 'https://zcore-network.gitbook.io/zcore-finance/',
       },
     ],
   },
@@ -116,9 +116,8 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/",
+        href: "",
       },
-           
       // {
       //   label: "Bahasa Indonesia",
       //   href: "https://t.me/PancakeSwapIndonesia",
@@ -147,10 +146,10 @@ export const socials = [
       //   label: "Português",
       //   href: "https://t.me/PancakeSwapPortuguese",
       // },
-       {
-         label: "Español",
-         href: "https://t.me/",
-       },
+      // {
+      //   label: "Español",
+      //   href: "https://t.me/PancakeswapEs",
+      // },
       // {
       //   label: "日本語",
       //   href: "https://t.me/pancakeswapjp",
@@ -161,7 +160,7 @@ export const socials = [
       // },
       {
         label: "Announcements",
-        href: "https://t.me/",
+        href: "",
       },
       // {
       //   label: "Whale Alert",
@@ -172,7 +171,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com",
+    href: "",
   },
 ];
 
@@ -180,3 +179,4 @@ export const MENU_HEIGHT = 64;
 export const MENU_ENTRY_HEIGHT = 48;
 export const SIDEBAR_WIDTH_FULL = 240;
 export const SIDEBAR_WIDTH_REDUCED = 56;
+
