@@ -6,10 +6,10 @@ const MenuLink: React.FC<AnchorHTMLAttributes<HTMLAnchorElement>> = ({ href, ...
 
   const isZCore =
     href?.startsWith("https://exchange.zcore.network") ||
-    href?.startsWith("https://app.zcore.network") ||
-    href?.startsWith("https://zefi.zcore.network") ||
-    href?.startsWith("/") ||
-    href?.startsWith("https://swap.zcore.network");  
+    href?.startsWith("") ||
+    href?.startsWith("") ||
+    href?.startsWith("") ||
+    href?.startsWith("");  
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Tag: any = isHttpLink ? "a" : NavLink;

@@ -17,11 +17,11 @@ export interface PushedProps {
   isPushed: boolean;
   pushNav: (isPushed: boolean) => void;
 }
-
 export interface NavTheme {
   background: string;
   hover: string;
 }
+
 
 export interface MenuSubEntry {
   label: string;
