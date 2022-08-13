@@ -20,7 +20,7 @@ const { MoonIcon, SunIcon, LanguageIcon } = Icons;
 
 const Container = styled.div`
   flex: none;
-  padding: 10px 10px;
+  padding: 8px 4px;
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
 `;
@@ -48,7 +48,7 @@ const SettingsEntry = styled.div`
 
 const SocialEntry = styled.div`
   display: flex;
-  align-items: last baseline;
+  align-items: center;
   justify-content: space-between;
   height: ${MENU_ENTRY_HEIGHT}px;
   padding: 0 16px;
@@ -83,7 +83,7 @@ const PanelFooter: React.FC<Props> = ({
     <Container>
       <SocialEntry>
         {cakePriceUsd ? (
-          <PriceLink href={priceLink} target="_blank">
+          <PriceLink href={priceLink} target="_blank" >
             <PancakeRoundIcon width="24px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
