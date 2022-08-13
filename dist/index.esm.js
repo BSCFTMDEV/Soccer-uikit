@@ -1506,9 +1506,9 @@ var shadows = {
     level1: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     active: "0px 0px 0px 1px #0098A1, 0px 0px 4px 8px rgba(31, 199, 212, 0.4)",
     success: "0px 0px 0px 1px #31D0AA, 0px 0px 0px 4px rgba(49, 208, 170, 0.2)",
-    warning: "0px 0px 0px 1px #FF0000, 0px 0px 0px 4px rgba(255, 0, 0, 0.2)",
-    focus: "0px 0px 0px 1px #4fd945, 0px 0px 0px 4px rgba(79, 217, 96, 0.6)",
-    inset: "inset 0px 2px 2px -1px rgba(77, 104, 74, 0.1)",
+    warning: "0px 0px 0px 1px #ED4B9E, 0px 0px 0px 4px rgba(237, 75, 158, 0.2)",
+    focus: "0px 0px 0px 1px #7645D9, 0px 0px 0px 4px rgba(118, 69, 217, 0.6)",
+    inset: "inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1)",
 };
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
@@ -1695,7 +1695,10 @@ var useParticleBurst = function (options) {
     return { initialize: initialize, teardown: teardown };
 };
 
-var StyledModal = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\nbackground-color: #DBF9FC;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\nbackground-color: #DBF9FC;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
+var StyledModal = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\nbackground: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\nbackground: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.modal.background;
+}, function (_a) {
     var theme = _a.theme;
     return theme.colors.borderColor;
 }, function (_a) {
@@ -2033,7 +2036,7 @@ var links = [
     {
         label: "Home",
         icon: "HomeIcon",
-        href: "",
+        href: "https://finance.zcore.network",
     },
     {
         label: "Trade",
@@ -2041,18 +2044,18 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "",
+                href: "https://exchange.zcore.network/#/swap",
             },
             {
                 label: "Liquidity",
-                href: "",
+                href: "https://exchange.zcore.network/#/pool",
             },
         ],
     },
     {
         label: "Farms",
         icon: "FarmIcon",
-        href: "",
+        href: "https://finance.zcore.network/farms",
     },
     {
         label: "Pools",
@@ -2130,11 +2133,11 @@ var links = [
             // },
             {
                 label: "Github",
-                href: "",
+                href: "https://github.com/goosedefi/",
             },
             {
                 label: 'Docs',
-                href: '',
+                href: 'https://zcore-network.gitbook.io/zcore-finance/',
             },
         ],
     },
@@ -2149,7 +2152,7 @@ var LinkLabel = styled.div(templateObject_2$a || (templateObject_2$a = __makeTem
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : "transparent");
 });
-var MenuEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 6s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 6s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
+var MenuEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", "px;\n  padding: ", ";\n  font-size: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    -webkit-background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 200% 100%;\n    font-weight: bold;\n  }\n"])), MENU_ENTRY_HEIGHT, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "0 32px" : "0 16px");
 }, function (_a) {
@@ -2213,16 +2216,10 @@ var templateObject_1$A, templateObject_2$b;
 var MenuLink = function (_a) {
     var href = _a.href, otherProps = __rest(_a, ["href"]);
     var isHttpLink = href === null || href === void 0 ? void 0 : href.startsWith("http");
-    var isZCore = (href === null || href === void 0 ? void 0 : href.startsWith("https://exchange.zcore.network")) || (href === null || href === void 0 ? void 0 : href.startsWith("https://app.zcore.network")) || (href === null || href === void 0 ? void 0 : href.startsWith("https://zefi.zcore.network")) || (href === null || href === void 0 ? void 0 : href.startsWith("/")) || (href === null || href === void 0 ? void 0 : href.startsWith("https://swap.zcore.network"));
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
-    if (isZCore) {
-        return React.createElement(Tag, __assign({}, props, otherProps));
-    }
-    else {
-        return React.createElement(Tag, __assign({ target: "_blank" }, props, otherProps));
-    }
+    return React.createElement(Tag, __assign({}, props, otherProps));
 };
 
 var Icons = IconModule;
@@ -2250,16 +2247,16 @@ var PanelBody = function (_a) {
 var templateObject_1$B;
 
 var Icons$1 = IconModule;
-Icons$1.MoonIcon; Icons$1.SunIcon; Icons$1.LanguageIcon;
+var MoonIcon = Icons$1.MoonIcon, SunIcon = Icons$1.SunIcon, LanguageIcon = Icons$1.LanguageIcon;
 var Container$4 = styled.div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });
 var PriceLink = styled.a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+var SettingsEntry = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled.div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
-    var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
+    var isPushed = _a.isPushed, pushNav = _a.pushNav, toggleTheme = _a.toggleTheme, isDark = _a.isDark, cakePriceUsd = _a.cakePriceUsd, currentLang = _a.currentLang, langs = _a.langs, setLang = _a.setLang, priceLink = _a.priceLink;
     if (!isPushed) {
         return (React.createElement(Container$4, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
@@ -2268,13 +2265,23 @@ var PanelFooter = function (_a) {
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null, cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
             React.createElement(Icon$v, { width: "24px", mr: "8px" }),
-            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })))));
+            React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }))),
+        React.createElement(SettingsEntry, null,
+            React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
+                React.createElement(Flex, { alignItems: "center" },
+                    React.createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "24px" }),
+                    React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
+                    React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "24px" }))),
+            React.createElement(Dropdown, { position: "top-right", target: React.createElement(Button, { variant: "text", startIcon: React.createElement(LanguageIcon, { color: "textSubtle", width: "24px" }) },
+                    React.createElement(Text, { color: "textSubtle" }, currentLang === null || currentLang === void 0 ? void 0 : currentLang.toUpperCase())) }, langs.map(function (lang) { return (React.createElement(MenuButton, { key: lang.code, fullWidth: true, onClick: function () { return setLang(lang); }, 
+                // Safari fix
+                style: { minHeight: "32px", height: "auto" } }, lang.language)); })))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
 var StyledPanel = styled.div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background-color: ", ";\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n  border-right: ", ";\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n    border-right: 2px solid rgba(133, 133, 133, 0.1);\n    width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
-    return (showMenu ? "50px" : 0);
+    return (showMenu ? "80px" : 0);
 }, function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
@@ -2421,8 +2428,8 @@ var WalletCard = function (_a) {
             login(walletConfig.connectorId);
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
-        }, style: { justifyContent: "space-between" }, color: "#0a0a0a", mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
-        React.createElement(Text, { bold: true, color: "#0a0a0a", mr: "16px" }, title),
+        }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
         React.createElement(Icon, { width: "32px" })));
 };
 
@@ -2701,22 +2708,22 @@ var ResetCSS = createGlobalStyle(templateObject_1$K || (templateObject_1$K = __m
 var templateObject_1$K;
 
 var baseColors = {
-    failure: "#fa0684",
-    primary: "#0601077c",
-    primaryBright: "#1a1357a4",
-    primaryDark: "#a7a3bad0",
-    secondary: "#0e373191",
-    success: "#2f9c479f",
-    warning: "#fc9d05ff",
+    failure: "#ED4B9E",
+    primary: "#0f5f5446",
+    primaryBright: "#0bf5d6",
+    primaryDark: "#100f5f",
+    secondary: "#0940f5",
+    success: "#31D0AA",
+    warning: "#FFB237",
 };
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#f1f0f0", backgroundDisabled: "#E9EAEB", contrast: "#010a09", invertedContrast: "#FFFFFF", input: "#0a0a0a", tertiary: "#f1f6f7", text: "#0a0a0a", textDisabled: "#BDC2C4", textSubtle: "#0a0a0a", borderColor: "#e9eaeb88", card: "#a6a3ba67", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #06e1f5 0%, #44327c 100%)",
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#f1f0f0", backgroundDisabled: "#E9EAEB", contrast: "#0b2b27", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#c7d1d0", textDisabled: "#BDC2C4", textSubtle: "#1e3359ff", borderColor: "#E9EAEB", card: "#ffffff00", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #1b0f5f 0%, #0e3731 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#09b2f5fa", background: "#00000800", backgroundDisabled: "#96c5fa", contrast: "#ffffffff", invertedContrast: "#070707ff", input: "#0a0a0a", primaryDark: "#0a0a0a", tertiary: "#571a6854", text: "#0a0a0a", textDisabled: "#cccccc7e", textSubtle: "#0a0a0a", borderColor: "#0a0a0a", card: "#a6a3ba00", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #06e1f5 0%, #44327c 100%)",
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#0478fcff", background: "#110433ff", backgroundDisabled: "#28a39313", contrast: "#FFFFFF", invertedContrast: "#0d4039", input: "#f9fdfd", primaryDark: "#2a182c", tertiary: "#10042b", text: "#FFFFFF", textDisabled: "#cccccc", textSubtle: "#1c1d1fff", borderColor: "#28a392", card: "#a6a3ba00", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #1b0f5f 0%, #0e3731 100%)",
     } });
 
 var light = {
@@ -2847,7 +2854,7 @@ var light$5 = {
 };
 var dark$5 = {
     background: darkColors.card,
-    hover: "#3d5d3f",
+    hover: "#3d5d3f2a",
 };
 
 var light$6 = {
