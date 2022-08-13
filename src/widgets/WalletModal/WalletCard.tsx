@@ -23,10 +23,11 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
         onDismiss();
       }}
       style={{ justifyContent: "space-between" }}
+      color="#0a0a0a"
       mb={mb}
       id={`wallet-connect-${title.toLocaleLowerCase()}`}
     >
-      <Text bold color="primary" mr="16px">
+      <Text bold color="#0a0a0a" mr="16px">
         {title}
       </Text>
       <Icon width="32px" />

@@ -14,7 +14,7 @@ interface Props {
 }
 
 const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
-  <Modal title="Your wallet" onDismiss={onDismiss}>
+  <Modal  title="Your wallet" onDismiss={onDismiss}>
     <Text
       fontSize="20px"
       bold
@@ -31,7 +31,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
     <Flex justifyContent="center">
       <Button
         size="sm"
-        variant="secondary"
+        variant="tertiary"
         onClick={() => {
           logout();
           window.localStorage.removeItem(localStorageKey);

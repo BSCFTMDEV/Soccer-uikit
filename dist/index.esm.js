@@ -1695,10 +1695,7 @@ var useParticleBurst = function (options) {
     return { initialize: initialize, teardown: teardown };
 };
 
-var StyledModal = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.modal.background;
-}, function (_a) {
+var StyledModal = styled.div(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\nbackground-color: #DBF9FC;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\nbackground-color: #DBF9FC;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.borderColor;
 }, function (_a) {
@@ -2424,8 +2421,8 @@ var WalletCard = function (_a) {
             login(walletConfig.connectorId);
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
-        }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
-        React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
+        }, style: { justifyContent: "space-between" }, color: "#0a0a0a", mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        React.createElement(Text, { bold: true, color: "#0a0a0a", mr: "16px" }, title),
         React.createElement(Icon, { width: "32px" })));
 };
 
@@ -2480,7 +2477,7 @@ var AccountModal = function (_a) {
             React.createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
-            React.createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
+            React.createElement(Button, { size: "sm", variant: "tertiary", onClick: function () {
                     logout();
                     window.localStorage.removeItem(localStorageKey);
                     onDismiss();
@@ -2705,9 +2702,9 @@ var templateObject_1$K;
 
 var baseColors = {
     failure: "#fa0684",
-    primary: "#b5a3baff",
-    primaryBright: "#8c85ce",
-    primaryDark: "#a7a3baff",
+    primary: "#0601077c",
+    primaryBright: "#1a1357a4",
+    primaryDark: "#a7a3bad0",
     secondary: "#0e373191",
     success: "#2f9c479f",
     warning: "#fc9d05ff",
@@ -2715,11 +2712,11 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#f1f0f0", backgroundDisabled: "#E9EAEB", contrast: "#010a09", invertedContrast: "#FFFFFF", input: "#71B4FF", tertiary: "#f1f6f7", text: "#0a0a0a", textDisabled: "#BDC2C4", textSubtle: "#09b2f5ad", borderColor: "#e9eaeb88", card: "#a6a3ba67", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#f1f0f0", backgroundDisabled: "#E9EAEB", contrast: "#010a09", invertedContrast: "#FFFFFF", input: "#0a0a0a", tertiary: "#f1f6f7", text: "#0a0a0a", textDisabled: "#BDC2C4", textSubtle: "#0a0a0a", borderColor: "#e9eaeb88", card: "#a6a3ba67", gradients: {
         bubblegum: "linear-gradient(139.73deg, #06e1f5 0%, #44327c 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#09b2f5fa", background: "#0000087c", backgroundDisabled: "#96c5fa", contrast: "#FFFFFF", invertedContrast: "#070707f3", input: "#0058a1f6", primaryDark: "#96a100d8", tertiary: "#b5a3ba1a", text: "#0a0a0a", textDisabled: "#cccccc7e", textSubtle: "#71b3fff1", borderColor: "#09b2f5ff", card: "#a6a3ba00", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #71B4FF 0%, #f2f8f79a 100%)",
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#09b2f5fa", background: "#00000800", backgroundDisabled: "#96c5fa", contrast: "#ffffffff", invertedContrast: "#070707ff", input: "#0a0a0a", primaryDark: "#0a0a0a", tertiary: "#571a6854", text: "#0a0a0a", textDisabled: "#cccccc7e", textSubtle: "#0a0a0a", borderColor: "#0a0a0a", card: "#a6a3ba00", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #06e1f5 0%, #44327c 100%)",
     } });
 
 var light = {
