@@ -2049,7 +2049,7 @@ var links = [
     {
         label: "Home",
         icon: "HomeIcon",
-        href: "https://finance.zcore.network",
+        href: "",
     },
     {
         label: "Trade",
@@ -2057,18 +2057,18 @@ var links = [
         items: [
             {
                 label: "Exchange",
-                href: "https://exchange.zcore.network/#/swap",
+                href: "",
             },
             {
                 label: "Liquidity",
-                href: "https://exchange.zcore.network/#/pool",
+                href: "",
             },
         ],
     },
     {
         label: "Farms",
         icon: "FarmIcon",
-        href: "https://finance.zcore.network/farms",
+        href: "",
     },
     {
         label: "Pools",
@@ -2229,10 +2229,16 @@ var templateObject_1$A, templateObject_2$b;
 var MenuLink = function (_a) {
     var href = _a.href, otherProps = __rest(_a, ["href"]);
     var isHttpLink = href === null || href === void 0 ? void 0 : href.startsWith("http");
+    var isZCore = (href === null || href === void 0 ? void 0 : href.startsWith("https://exchange.zcore.network")) || (href === null || href === void 0 ? void 0 : href.startsWith("https://app.zcore.network")) || (href === null || href === void 0 ? void 0 : href.startsWith("https://zefi.zcore.network")) || (href === null || href === void 0 ? void 0 : href.startsWith("/")) || (href === null || href === void 0 ? void 0 : href.startsWith("https://swap.zcore.network"));
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     var Tag = isHttpLink ? "a" : reactRouterDom.NavLink;
     var props = isHttpLink ? { href: href } : { to: href };
-    return React__default['default'].createElement(Tag, __assign({}, props, otherProps));
+    if (isZCore) {
+        return React__default['default'].createElement(Tag, __assign({}, props, otherProps));
+    }
+    else {
+        return React__default['default'].createElement(Tag, __assign({ target: "_blank" }, props, otherProps));
+    }
 };
 
 var Icons = IconModule;
