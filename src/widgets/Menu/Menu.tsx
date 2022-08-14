@@ -42,7 +42,7 @@ const BodyWrapper = styled.div`
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-grow: 1;
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
-  transition: margin-top 0.2s;
+  transition: margin-top 0.5s;
   transform: translate3d(0, 0, 0);
   ${({ theme }) => theme.mediaQueries.nav} {
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
@@ -54,7 +54,7 @@ const MobileOnlyOverlay = styled(Overlay)`
   height: 100%;
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    display: flex;
+    display: none;
   }
 `;
 

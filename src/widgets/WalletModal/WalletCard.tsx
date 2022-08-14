@@ -1,4 +1,5 @@
 import React from "react";
+import { background } from "styled-system";
 import Button from "../../components/Button/Button";
 import Text from "../../components/Text/Text";
 import { localStorageKey } from "./config";
@@ -13,6 +14,7 @@ interface Props {
 
 const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => {
   const { title, icon: Icon } = walletConfig;
+ 
   return (
     <Button
       fullWidth
@@ -23,6 +25,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
         onDismiss();
       }}
       style={{ justifyContent: "space-between" }}
+      color="primary"
       mb={mb}
       id={`wallet-connect-${title.toLocaleLowerCase()}`}
     >

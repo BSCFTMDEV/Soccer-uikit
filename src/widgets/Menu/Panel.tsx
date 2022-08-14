@@ -14,7 +14,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   position: fixed;
   padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
   top: 0;
-  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,8 +38,9 @@ const Panel: React.FC<Props> = (props) => {
   const { isPushed, showMenu } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
+     <PanelFooter {...props} />
       <PanelBody {...props} />
-      <PanelFooter {...props} />
+      
     </StyledPanel>
   );
 };
